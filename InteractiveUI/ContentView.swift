@@ -20,6 +20,13 @@ struct ContentView: View {
             TextField("Type your name here...", text:$name)
                 .multilineTextAlignment(.center)
                 .font(.title)
+            
+            Button("Sumbit name") {
+                
+            }
+            .font(.title2)
+            .buttonStyle(.borderedProminent)
+            .tint(.purple)
         }
         .padding()
     }
