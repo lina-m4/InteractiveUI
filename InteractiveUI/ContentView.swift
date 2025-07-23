@@ -14,7 +14,7 @@ struct ContentView: View {
     
     var body: some View {
         ZStack {
-            Text("What is your name?")
+            Text(textTitle)
                 .font(.title)
             
             TextField("Type your name here...", text:$name)
@@ -22,7 +22,7 @@ struct ContentView: View {
                 .font(.title)
             
             Button("Sumbit name") {
-                
+                textTitle = "Welcome, \(name)!"
             }
             .font(.title2)
             .buttonStyle(.borderedProminent)
